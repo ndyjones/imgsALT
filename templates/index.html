@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgsALT - Image Alt Text Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+            <h1>imgsALT</h1>
+            <p class="subtitle">Transform your images with AI-powered alt text</p>
+            
+            <form id="uploadForm">
+                <div class="upload-area" id="dropZone">
+                    <input type="file" id="imageInput" accept="image/*" required>
+                    <label for="imageInput">
+                        <div class="upload-prompt">
+                            <span class="icon">📸</span>
+                            <p>Drop your image here or click to browse</p>
+                            <p class="file-types">Supports PNG, JPG, GIF</p>
+                        </div>
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Generate ALT text</span>
+                </button>
+            </form>
+
+        <div id="preview" class="hidden">
+            <h3>Image Preview:</h3>
+            <img id="imagePreview" alt="Preview of uploaded image">
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Generated ALT text:</h2>
+            <div class="result-box">
+                <p id="altText"></p>
+                <button id="copyButton" class="copy-btn">
+                    <span class="icon">📋</span> Copy
+                </button>
+            </div>
+        </div>
+
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Generating ALT text...</p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

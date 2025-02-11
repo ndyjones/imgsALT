@@ -21,7 +21,7 @@ imgsALT is a web application that generates accessible alt text for images using
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone https://github.com/ndyjones/imgsALT.git
 cd imgsALT
 ```
 

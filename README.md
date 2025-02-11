@@ -23,25 +23,31 @@ imgsALT is a web application that generates accessible alt text for images using
 ```bash
 git clone [your-repo-url]
 cd imgsALT
+```
 
 2. Install required packages
 ```bash
 pip install -r requirements.txt
+```
 
 3. Create .env file in the root directory and add your OpenAI API key:
 ```plaintext
 OPENAI_API-KEY=your-api-key-here
+```
 
 ## Usage
 
 1. Start the Flask server:
-```bash python app.py
+```bash
+python app.py
+```
 
 2. Open your web browser and navigate to:
 ```plaintext
 http://localhost:7000
+```
 
-3. Upload an image by either dragging and dropping an image into the upload area OR clicking the upload area to select an image file.filename
+3. Upload an image by either dragging and dropping an image into the upload area OR clicking the upload area to select an image file.
 
 4. Click "Generate ALT text" to process your image
 
@@ -49,6 +55,7 @@ http://localhost:7000
 
 ## Project Structure
 
+```
 imgsALT/
 ├── static/
 │   ├── css/
@@ -61,6 +68,7 @@ imgsALT/
 ├── app.py
 ├── requirements.txt
 └── .env #Add your OpenAI API keye here
+```
 
 ## License
 
